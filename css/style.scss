@@ -178,3 +178,23 @@ table
 	}
   }
 }
+
+.sort
+{
+  display     : inline-block;
+  position    : relative;
+  height      : 1em;
+  line-height : 1em;
+  sup
+  {
+	left     : 0;
+	top      : -0.2em;
+	position : absolute;
+  }
+  sub
+  {
+	bottom   : -0.2em;
+	left     : 0;
+	position : absolute;
+  }
+}

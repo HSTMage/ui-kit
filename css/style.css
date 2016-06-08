@@ -126,13 +126,14 @@ p {
     vertical-align: top;
     padding: 20px; }
 
-.row {
+.row.padded {
   padding: 40px;
   margin: 0px; }
-  .row .inner {
-    padding: 40px;
-    border: 1px solid #e0e0e0;
-    background-color: #fff; }
+.row .inner {
+  border: 1px solid #e0e0e0;
+  background-color: #fff; }
+  .row .inner.padded {
+    padding: 40px; }
 
 table.data-table {
   width: 100%; }
@@ -171,5 +172,17 @@ table.data-table {
     bottom: -0.2em;
     left: 0;
     position: absolute; }
+
+nav.block {
+  display: block;
+  border: 1px solid #e0e0e0;
+  padding: 10px; }
+nav .pagination {
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto; }
+  nav .pagination > li > a {
+    border: none; }
 
 /*# sourceMappingURL=style.css.map */

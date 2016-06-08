@@ -138,11 +138,17 @@ p
 
 .row
 {
-  padding : $big-padding;
-  margin  : 0px;
+  &.padded
+  {
+	padding : $big-padding;
+	margin  : 0px;
+  }
   .inner
   {
-	padding          : $big-padding;
+	&.padded
+	{
+	  padding : $big-padding;
+	}
 	border           : 1px solid $color-secondary-7;
 	background-color : $white;
   }
@@ -217,5 +223,29 @@ table
 	bottom   : -0.2em;
 	left     : 0;
 	position : absolute;
+  }
+}
+
+nav
+{
+  &.block
+  {
+	display : block;
+	border  : 1px solid $color-secondary-7;
+	padding : $small-padding;
+  }
+  .pagination
+  {
+	padding      : 0;
+	margin       : 0;
+	margin-left  : auto;
+	margin-right : auto;
+	& > li
+	{
+	  & > a
+	  {
+		border : none;
+	  }
+	}
   }
 }

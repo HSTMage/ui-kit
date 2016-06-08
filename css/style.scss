@@ -166,8 +166,9 @@ nav {
         background: #47586d;
         border: 0px;
         box-shadow: none;
-        margin-bottom: 0px;
+        margin-bottom: 30px;
         border-radius: 0px;
+        text-shadow: none;
 
         &> .container-fluid {
 
@@ -183,6 +184,7 @@ nav {
                     padding: 0px;
                     padding-top: 22px;
                     font-size: 1.9rem;
+                    text-shadow: none;
                 }
 
                 .navbar-toggle {
@@ -288,6 +290,7 @@ nav {
                         padding: 20px 0px 17px 0px;
                         margin-left: 20px;
                         margin-right: 20px;
+                        text-shadow: none;
 
                         @include font-La-bd;
 
@@ -322,13 +325,54 @@ nav {
                         padding: 20px 0px 17px 0px;
                         margin-left: 20px;
                         margin-right: 20px;
+                        padding-right: 20px;
 
                         color: #b7c4d4;
+
+                        &.search {
+                            position: relative;
+
+                            i {
+                                margin-right: 8px;
+                                font-size: 1.7rem;
+                            }
+
+                            &:after {
+                                display: block;
+                                content: '';
+                                position: absolute;
+                                height: 34px;
+                                top: 13px;
+                                right: 0px;
+                                width: 1px;
+                                background: #727f8f;
+                            }
+
+                        }
+
+                        &.user-profile {
+                            padding: 8px 0px 8px 0px;
+
+                            span {
+                                display: inline-block;
+                                margin-right: 8px;
+                            }
+
+                            &:hover, &.hover {
+                                color: $white;
+                            }
+
+                        }
 
                         &.logout {
 
                             i {
                                 margin-right: 8px;
+                                font-size: 1.7rem;
+                            }
+
+                            &:hover, &.hover {
+                                color: $color-secondary-1;
                             }
 
                         }

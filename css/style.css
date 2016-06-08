@@ -177,12 +177,12 @@ nav.block {
   display: block;
   border: 1px solid #e0e0e0;
   padding: 10px; }
-nav .pagination {
+nav.pager .pagination {
   padding: 0;
   margin: 0;
   margin-left: auto;
   margin-right: auto; }
-  nav .pagination > li > a {
+  nav.pager .pagination > li > a {
     border: none; }
 
 /*# sourceMappingURL=style.css.map */

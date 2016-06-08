@@ -234,17 +234,20 @@ nav
 	border  : 1px solid $color-secondary-7;
 	padding : $small-padding;
   }
-  .pagination
+  &.pager
   {
-	padding      : 0;
-	margin       : 0;
-	margin-left  : auto;
-	margin-right : auto;
-	& > li
+	.pagination
 	{
-	  & > a
+	  padding      : 0;
+	  margin       : 0;
+	  margin-left  : auto;
+	  margin-right : auto;
+	  & > li
 	  {
-		border : none;
+		& > a
+		{
+		  border : none;
+		}
 	  }
 	}
   }

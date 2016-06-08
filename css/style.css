@@ -1,188 +1,41 @@
-@import url(normalize.css);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic);
-@import url(fa/css/font-awesome.min.css);
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.cf:before,
-.cf:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
+/*
+Error: Invalid CSS after "...> origin/master": expected "{", was ""
+        on line 559 of style.scss
 
-.cf:after {
-  clear: both; }
+554: 	}
+555:   }
+556: }
+557: =======
+558: >>>>>>> origin/master
 
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-  *zoom: 1; }
-
-html {
-  width: 100%;
-  height: 100%; }
-
-body {
-  background-color: #f7f5f3; }
-
-h1 {
-  font-size: 3.6rem;
-  color: #47586d;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700; }
-
-h2 {
-  font-size: 3.0rem;
-  color: #47586d;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700; }
-
-h3 {
-  font-size: 2.4rem;
-  color: #47586d;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400; }
-
-h4 {
-  font-size: 2.2rem;
-  color: #222;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700; }
-
-h5 {
-  font-size: 1.8rem;
-  color: #222;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700; }
-
-h6 {
-  font-size: 1.6rem;
-  color: #222;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700; }
-
-p {
-  font-size: 1.6rem;
-  color: #444;
-  margin-top: 0px;
-  margin-bottom: 18px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400; }
-  p .bigger {
-    font-size: 1.8rem; }
-  p .smaller {
-    font-size: 1.4rem;
-    color: #222; }
-
-.orange {
-  color: #f59100; }
-
-.La {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400; }
-
-.LaI {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-style: italic; }
-
-.LaBd {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700; }
-
-.LaBdI {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-style: italic; }
-
-#typography {
-  background: #f7f5f3;
-  padding: 50px 30px; }
-
-.for-showcase-only {
-  border-collapse: collapse; }
-  .for-showcase-only tr td {
-    vertical-align: top;
-    padding: 20px; }
-
-.row.padded {
-  padding: 40px;
-  margin: 0px; }
-.row .inner {
-  border: 1px solid #e0e0e0;
-  background-color: #fff; }
-  .row .inner.padded {
-    padding: 40px; }
-
-table.data-table {
-  width: 100%; }
-  table.data-table thead th {
-    background-color: #ffe6c2;
-    padding: 20px;
-    text-align: left;
-    border: 1px solid #e0e0e0;
-    font-weight: bold;
-    color: #47586d; }
-  table.data-table tbody tr:nth-child(odd) {
-    background-color: #fff; }
-  table.data-table tbody tr:nth-child(even) {
-    background-color: #f8f8f8; }
-  table.data-table tbody tr td {
-    padding: 20px;
-    text-align: right;
-    border: 1px solid #e0e0e0;
-    font-weight: bold;
-    color: #222;
-    border-top: none;
-    border-bottom: none; }
-  table.data-table tbody tr:last-child td {
-    border-bottom: 1px solid #e0e0e0; }
-
-.sort {
-  display: inline-block;
-  position: relative;
-  height: 1em;
-  line-height: 1em; }
-  .sort sup {
-    left: 0;
-    top: -0.2em;
-    position: absolute; }
-  .sort sub {
-    bottom: -0.2em;
-    left: 0;
-    position: absolute; }
-
-nav.block {
-  display: block;
-  border: 1px solid #e0e0e0;
-  padding: 10px; }
-nav.pager .pagination {
-  padding: 0;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto; }
-  nav.pager .pagination > li > a {
-    border: none; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.scss:559
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1179:in `expected'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1115:in `expected'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1110:in `tok!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:654:in `block'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:647:in `ruleset'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:673:in `block_child'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:666:in `block_contents'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:123:in `stylesheet'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:39:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:403:in `_to_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:363:in `watch_or_update'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/bin/scss:13:in `<top (required)>'
+C:/Ruby22-x64/bin/scss:23:in `load'
+C:/Ruby22-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...> origin/master\": expected \"{\", was \"\"\A         on line 559 of style.scss\A \A 554: 	}\A 555:   }\A 556: }\A 557: =======\A 558: >>>>>>> origin/master"; }

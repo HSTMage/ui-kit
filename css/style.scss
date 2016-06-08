@@ -75,12 +75,16 @@ p
   margin-bottom : 18px;
   @include font-La;
 
-  .bigger
+  &.bigger
   {
 	font-size : 1.8rem;
   }
 
-  .smaller
+    &.big {
+        font-size: 2.2rem;
+    }
+
+  &.smaller
   {
 	font-size : 1.4rem;
 	color     : $color-primary-4;
@@ -88,9 +92,52 @@ p
 
 }
 
-.orange
-{
-  color : $color-primary-1;
+.orange {
+    color: $color-primary-1;
+}
+
+.pc-1 {
+    color: $color-primary-1;
+}
+
+.pc-2 {
+    color: $color-primary-2;
+}
+
+.pc-3 {
+    color: $color-primary-3;
+}
+
+.pc-4 {
+    color: $color-primary-4;
+}
+
+.sc-1 {
+    color: $color-secondary-1;
+}
+
+.sc-2 {
+    color: $color-secondary-2;
+}
+
+.sc-3 {
+    color: $color-secondary-3;
+}
+
+.sc-4 {
+    color: $color-secondary-4;
+}
+
+.sc-5 {
+    color: $color-secondary-5;
+}
+
+.sc-6 {
+    color: $color-secondary-6;
+}
+
+.sc-7 {
+    color: $color-secondary-7;
 }
 
 .La
@@ -113,6 +160,190 @@ p
   @include font-La-bd-i;
 }
 
+nav {
+
+    &.navbar-default, &.navbar {
+        background: #47586d;
+        border: 0px;
+        box-shadow: none;
+        margin-bottom: 0px;
+        border-radius: 0px;
+
+        &> .container-fluid {
+
+            .navbar-header {
+
+                @media (max-width: $size-medium - 1) {
+                    float: none;
+                }
+
+                .navbar-brand {
+                    margin: 0px;
+                    margin-right: 50px;
+                    padding: 0px;
+                    padding-top: 22px;
+                    font-size: 1.9rem;
+                }
+
+                .navbar-toggle {
+                    margin-top: 43px;
+
+                    @media (max-width: $size-medium - 1) {
+                        display: block;
+                    }
+
+                    &:hover {
+                        background: #dddddd;
+
+                        .icon-bar {
+                            background: #ffffff;
+                        }
+
+                    }
+
+                    &:focus {
+                        background: #ffffff;
+
+                        .icon-bar {
+                            background: #888888;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            .navbar-collapse {
+
+                @media (max-width: $size-medium - 1) {
+
+                    border-top: 1px solid transparent;
+                    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+
+                }
+
+                &.collapse {
+
+                    @media (max-width: $size-medium - 1) {
+                        display: none !important;
+                    }
+
+                    &.in {
+
+                        @media (max-width: $size-medium - 1) {
+                            display:block !important;
+                            position: absolute;
+                            background: #ffffff;
+                            right: 0px;
+                            z-index: 1000;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            .navbar-nav {
+
+                @media (max-width: $size-medium - 1) {
+                    margin-top: 0px;
+                    float: none !important;
+                    margin-top: 7.5px;
+
+                    .navbar-left, .navbar-right {
+                        float: none !important;
+                    }
+
+                    .navbar-fixed-top {
+                        top: 0;
+                        border-width: 0 0 1px;
+                    }
+
+                }
+
+                & > li {
+
+                    @media (max-width: $size-medium - 1) {
+                        float: none;
+                    }
+
+                    &.active {
+
+                        & > a {
+                            background-image: none;
+                            background: transparent;
+                            box-shadow: none;
+                            font-weight: bold;
+                            border-bottom: 3px solid $color-primary-1;
+                            color:  $color-primary-1;
+                        }
+
+                    }
+
+                    & > a {
+                        font-size: 1.5rem;
+                        color: #ffffff;
+                        padding: 20px 0px 17px 0px;
+                        margin-left: 20px;
+                        margin-right: 20px;
+
+                        @include font-La-bd;
+
+                        &:hover, &.hover {
+                            background-image: none;
+                            background: transparent;
+                            box-shadow: none;
+                            color:  $color-primary-1;
+
+                            @media (max-width: $size-medium - 1) {
+                                border-bottom: 0px;
+                            }
+                        }
+
+                        @media (max-width: $size-medium - 1) {
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                        }
+                    }
+
+                }
+
+            }
+
+            .navbar-nav.navbar-right {
+
+                & > li {
+
+                    & > a {
+                        font-size: 1.5rem;
+                        color: #ffffff;
+                        padding: 20px 0px 17px 0px;
+                        margin-left: 20px;
+                        margin-right: 20px;
+
+                        color: #b7c4d4;
+
+                        &.logout {
+
+                            i {
+                                margin-right: 8px;
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
 #typography
 {
   background : #f7f5f3;
@@ -134,6 +365,73 @@ p
 
   }
 
+  p {
+
+        &.color-show {
+            padding-left: 60px;
+            padding-top: 10px;
+        }
+
+    }
+
+}
+
+.color-circle {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border: 1px solid transparent;
+    float: left;
+
+    @include border-radius(50%);
+
+    &.secondary-6, &.secondary-7 {
+        border: 1px solid #c5c5c5;
+    }
+}
+
+.primary-1 {
+    background: $color-primary-1;
+}
+
+.primary-2 {
+    background: $color-primary-2;
+}
+
+.primary-3 {
+    background: $color-primary-3;
+}
+
+.primary-4 {
+    background: $color-primary-4;
+}
+
+.secondary-1 {
+    background: $color-secondary-1;
+}
+
+.secondary-2 {
+    background: $color-secondary-2;
+}
+
+.secondary-3 {
+    background: $color-secondary-3;
+}
+
+.secondary-4 {
+    background: $color-secondary-4;
+}
+
+.secondary-5 {
+    background: $color-secondary-5;
+}
+
+.secondary-6 {
+    background: $color-secondary-6;
+}
+
+.secondary-7 {
+    background: $color-secondary-7;
 }
 
 .row

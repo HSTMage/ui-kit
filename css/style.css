@@ -144,7 +144,11 @@ table.data-table {
     text-align: right;
     border: 1px solid #e0e0e0;
     font-weight: bold;
-    color: #222; }
+    color: #222;
+    border-top: none;
+    border-bottom: none; }
+  table.data-table tbody tr:last-child td {
+    border-bottom: 1px solid #e0e0e0; }
 
 .sort {
   display: inline-block;

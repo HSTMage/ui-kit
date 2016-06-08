@@ -31,6 +31,9 @@ html {
   width: 100%;
   height: 100%; }
 
+body {
+  background-color: #f7f5f3; }
+
 h1 {
   font-size: 3.6rem;
   color: #47586d;
@@ -123,8 +126,13 @@ p {
     vertical-align: top;
     padding: 20px; }
 
-.wrapper {
-  padding: 20px; }
+.row {
+  padding: 40px;
+  margin: 0px; }
+  .row .inner {
+    padding: 40px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff; }
 
 table.data-table {
   width: 100%; }

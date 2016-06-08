@@ -8,6 +8,11 @@ html
   height : 100%;
 }
 
+body
+{
+  background-color : $main-bg;
+}
+
 h1
 {
   font-size     : 3.6rem;
@@ -131,9 +136,16 @@ p
 
 }
 
-.wrapper
+.row
 {
-  padding : $main-padding;
+  padding : $big-padding;
+  margin  : 0px;
+  .inner
+  {
+	padding          : $big-padding;
+	border           : 1px solid $color-secondary-7;
+	background-color : $white;
+  }
 }
 
 table

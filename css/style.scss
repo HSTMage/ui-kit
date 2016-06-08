@@ -2,126 +2,179 @@
 @import "_variables";
 @import "_functions";
 
-html {
-    width: 100%;
-    height: 100%;
+html
+{
+  width  : 100%;
+  height : 100%;
 }
 
-body {
+h1
+{
+  font-size     : 3.6rem;
+  color         : $color-primary-2;
+  margin-top    : 0px;
+  margin-bottom : 20px;
+  @include font-La-bd;
+}
 
-    h1 {
-        font-size: 3.6rem;
-        color: $color-primary-2;
-        margin-top: 0px;
-        margin-bottom: 20px;
+h2
+{
+  font-size     : 3.0rem;
+  color         : $color-primary-2;
+  margin-top    : 0px;
+  margin-bottom : 20px;
+  @include font-La-bd;
+}
 
-        @include font-La-bd;
-    }
+h3
+{
+  font-size     : 2.4rem;
+  color         : $color-primary-2;
+  margin-top    : 0px;
+  margin-bottom : 20px;
+  @include font-La;
+}
 
-    h2 {
-        font-size: 3.0rem;
-        color: $color-primary-2;
-        margin-top: 0px;
-        margin-bottom: 20px;
+h4
+{
+  font-size     : 2.2rem;
+  color         : $color-primary-4;
+  margin-top    : 0px;
+  margin-bottom : 20px;
+  @include font-La-bd;
+}
 
-        @include font-La-bd;
-    }
+h5
+{
+  font-size     : 1.8rem;
+  color         : $color-primary-4;
+  margin-top    : 0px;
+  margin-bottom : 20px;
+  @include font-La-bd;
+}
 
-    h3 {
-        font-size: 2.4rem;
-        color: $color-primary-2;
-        margin-top: 0px;
-        margin-bottom: 20px;
+h6
+{
+  font-size     : 1.6rem;
+  color         : $color-primary-4;
+  margin-top    : 0px;
+  margin-bottom : 20px;
+  @include font-La-bd;
+}
 
-        @include font-La;
-    }
+p
+{
+  font-size     : 1.6rem;
+  color         : $color-primary-3;
+  margin-top    : 0px;
+  margin-bottom : 18px;
+  @include font-La;
 
-    h4 {
-        font-size: 2.2rem;
-        color: $color-primary-4;
-        margin-top: 0px;
-        margin-bottom: 20px;
+  .bigger
+  {
+	font-size : 1.8rem;
+  }
 
-        @include font-La-bd;
-    }
+  .smaller
+  {
+	font-size : 1.4rem;
+	color     : $color-primary-4;
+  }
 
-    h5 {
-        font-size: 1.8rem;
-        color: $color-primary-4;
-        margin-top: 0px;
-        margin-bottom: 20px;
+}
 
-        @include font-La-bd;
-    }
+.orange
+{
+  color : $color-primary-1;
+}
 
-    h6 {
-        font-size: 1.6rem;
-        color: $color-primary-4;
-        margin-top: 0px;
-        margin-bottom: 20px;
+.La
+{
+  @include font-La;
+}
 
-        @include font-La-bd;
-    }
+.LaI
+{
+  @include font-La-i;
+}
 
-    p {
-        font-size: 1.6rem;
-        color: $color-primary-3;
-        margin-top: 0px;
-        margin-bottom: 18px;
+.LaBd
+{
+  @include font-La-bd;
+}
 
-        @include font-La;
+.LaBdI
+{
+  @include font-La-bd-i;
+}
 
-        .bigger {
-            font-size: 1.8rem;
-        }
+#typography
+{
+  background : #f7f5f3;
+  padding    : 50px 30px;
+}
 
-        .smaller {            
-            font-size: 1.4rem;
-            color: $color-primary-4;
-        }
+.for-showcase-only
+{
+  border-collapse : collapse;
 
-    }
+  tr
+  {
 
-    .orange {
-        color: $color-primary-1;
-    }
+	td
+	{
+	  vertical-align : top;
+	  padding        : 20px;
+	}
 
-    .La {
-        @include font-La;
-    }
+  }
 
-    .LaI {
-        @include font-La-i;
-    }
+}
 
-    .LaBd {
-        @include font-La-bd;
-    }
+.wrapper
+{
+  padding : $main-padding;
+}
 
-    .LaBdI {
-        @include font-La-bd-i;
-    }
+table
+{
+  &.data-table
+  {
+	width : 100%;
+	thead
+	{
+	  th
+	  {
+		background-color : $color-additional-1;
+		padding          : $main-padding;
+		text-align       : left;
+		border           : 1px solid $color-secondary-7;
+		font-weight      : bold;
+		color            : $color-primary-2;
+	  }
+	}
+	tbody
+	{
 
-    #typography {
-        background: #f7f5f3;
-        padding: 50px 30px;
-    }
-
-    .for-showcase-only {
-
-        border-collapse: collapse;
-
-        tr {
-
-            td {
-
-                vertical-align: top;
-                padding: 20px;
-
-            }
-
-        }
-
-    }
-
+	  tr
+	  {
+		&:nth-child(odd)
+		{
+		  background-color : $color-primary-5;
+		}
+		&:nth-child(even)
+		{
+		  background-color : $color-additional-2;
+		}
+		td
+		{
+		  padding     : $main-padding;
+		  text-align  : right;
+		  border      : 1px solid $color-secondary-7;
+		  font-weight : bold;
+		  color       : $color-primary-4;
+		}
+	  }
+	}
+  }
 }

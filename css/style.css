@@ -15,134 +15,135 @@
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */
-}
+  /* 2 */ }
 
 .cf:after {
-  clear: both;
-}
+  clear: both; }
 
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
 .cf {
-  *zoom: 1;
-}
+  *zoom: 1; }
 
 html {
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
-body h1 {
+h1 {
   font-size: 3.6rem;
   color: #47586d;
   margin-top: 0px;
   margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
-}
+  font-weight: 700; }
 
-body h2 {
+h2 {
   font-size: 3.0rem;
   color: #47586d;
   margin-top: 0px;
   margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
-}
+  font-weight: 700; }
 
-body h3 {
+h3 {
   font-size: 2.4rem;
   color: #47586d;
   margin-top: 0px;
   margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
-}
+  font-weight: 400; }
 
-body h4 {
+h4 {
   font-size: 2.2rem;
-  color: #222222;
+  color: #222;
   margin-top: 0px;
   margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
-}
+  font-weight: 700; }
 
-body h5 {
+h5 {
   font-size: 1.8rem;
-  color: #222222;
+  color: #222;
   margin-top: 0px;
   margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
-}
+  font-weight: 700; }
 
-body h6 {
+h6 {
   font-size: 1.6rem;
-  color: #222222;
+  color: #222;
   margin-top: 0px;
   margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
-}
+  font-weight: 700; }
 
-body p {
+p {
   font-size: 1.6rem;
-  color: #444444;
+  color: #444;
   margin-top: 0px;
   margin-bottom: 18px;
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
-}
+  font-weight: 400; }
+  p .bigger {
+    font-size: 1.8rem; }
+  p .smaller {
+    font-size: 1.4rem;
+    color: #222; }
 
-body p .bigger {
-  font-size: 1.8rem;
-}
+.orange {
+  color: #f59100; }
 
-body p .smaller {
-  font-size: 1.4rem;
-  color: #222222;
-}
+.La {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; }
 
-body .orange {
-  color: #f59100;
-}
-
-body .La {
+.LaI {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-}
+  font-style: italic; }
 
-body .LaI {
+.LaBd {
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
+  font-weight: 700; }
 
-body .LaBd {
+.LaBdI {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-}
+  font-style: italic; }
 
-body .LaBdI {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-body #typography {
+#typography {
   background: #f7f5f3;
-  padding: 50px 30px;
-}
+  padding: 50px 30px; }
 
-body .for-showcase-only {
-  border-collapse: collapse;
-}
+.for-showcase-only {
+  border-collapse: collapse; }
+  .for-showcase-only tr td {
+    vertical-align: top;
+    padding: 20px; }
 
-body .for-showcase-only tr td {
-  vertical-align: top;
-  padding: 20px;
-}
+.wrapper {
+  padding: 20px; }
+
+table.data-table {
+  width: 100%; }
+  table.data-table thead th {
+    background-color: #ffe6c2;
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    font-weight: bold;
+    color: #47586d; }
+  table.data-table tbody tr:nth-child(odd) {
+    background-color: #fff; }
+  table.data-table tbody tr:nth-child(even) {
+    background-color: #f8f8f8; }
+  table.data-table tbody tr td {
+    padding: 20px;
+    text-align: right;
+    border: 1px solid #e0e0e0;
+    font-weight: bold;
+    color: #222; }
+
+/*# sourceMappingURL=style.css.map */

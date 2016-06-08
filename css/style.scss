@@ -80,9 +80,10 @@ p
 	font-size : 1.8rem;
   }
 
-    &.big {
-        font-size: 2.2rem;
-    }
+  &.big
+  {
+	font-size : 2.2rem;
+  }
 
   &.smaller
   {
@@ -92,52 +93,64 @@ p
 
 }
 
-.orange {
-    color: $color-primary-1;
+.orange
+{
+  color : $color-primary-1;
 }
 
-.pc-1 {
-    color: $color-primary-1;
+.pc-1
+{
+  color : $color-primary-1;
 }
 
-.pc-2 {
-    color: $color-primary-2;
+.pc-2
+{
+  color : $color-primary-2;
 }
 
-.pc-3 {
-    color: $color-primary-3;
+.pc-3
+{
+  color : $color-primary-3;
 }
 
-.pc-4 {
-    color: $color-primary-4;
+.pc-4
+{
+  color : $color-primary-4;
 }
 
-.sc-1 {
-    color: $color-secondary-1;
+.sc-1
+{
+  color : $color-secondary-1;
 }
 
-.sc-2 {
-    color: $color-secondary-2;
+.sc-2
+{
+  color : $color-secondary-2;
 }
 
-.sc-3 {
-    color: $color-secondary-3;
+.sc-3
+{
+  color : $color-secondary-3;
 }
 
-.sc-4 {
-    color: $color-secondary-4;
+.sc-4
+{
+  color : $color-secondary-4;
 }
 
-.sc-5 {
-    color: $color-secondary-5;
+.sc-5
+{
+  color : $color-secondary-5;
 }
 
-.sc-6 {
-    color: $color-secondary-6;
+.sc-6
+{
+  color : $color-secondary-6;
 }
 
-.sc-7 {
-    color: $color-secondary-7;
+.sc-7
+{
+  color : $color-secondary-7;
 }
 
 .La
@@ -160,190 +173,213 @@ p
   @include font-La-bd-i;
 }
 
-nav {
+nav
+{
 
-    &.navbar-default, &.navbar {
-        background: #47586d;
-        border: 0px;
-        box-shadow: none;
-        margin-bottom: 0px;
-        border-radius: 0px;
+  &.navbar-default, &.navbar
+  {
+	background    : #47586d;
+	border        : 0px;
+	box-shadow    : none;
+	margin-bottom : 0px;
+	border-radius : 0px;
 
-        &> .container-fluid {
+	& > .container-fluid
+	{
 
-            .navbar-header {
+	  .navbar-header
+	  {
 
-                @media (max-width: $size-medium - 1) {
-                    float: none;
-                }
+		@media (max-width : $size-medium - 1) {
+		  float : none;
+		}
 
-                .navbar-brand {
-                    margin: 0px;
-                    margin-right: 50px;
-                    padding: 0px;
-                    padding-top: 22px;
-                    font-size: 1.9rem;
-                }
+		.navbar-brand
+		{
+		  margin       : 0px;
+		  margin-right : 50px;
+		  padding      : 0px;
+		  padding-top  : 22px;
+		  font-size    : 1.9rem;
+		}
 
-                .navbar-toggle {
-                    margin-top: 43px;
+		.navbar-toggle
+		{
+		  margin-top : 43px;
 
-                    @media (max-width: $size-medium - 1) {
-                        display: block;
-                    }
+		  @media (max-width : $size-medium - 1) {
+			display : block;
+		  }
 
-                    &:hover {
-                        background: #dddddd;
+		  &:hover
+		  {
+			background : #ddd;
 
-                        .icon-bar {
-                            background: #ffffff;
-                        }
+			.icon-bar
+			{
+			  background : #fff;
+			}
 
-                    }
+		  }
 
-                    &:focus {
-                        background: #ffffff;
+		  &:focus
+		  {
+			background : #fff;
 
-                        .icon-bar {
-                            background: #888888;
-                        }
+			.icon-bar
+			{
+			  background : #888;
+			}
 
-                    }
+		  }
 
-                }
+		}
 
-            }
+	  }
 
-            .navbar-collapse {
+	  .navbar-collapse
+	  {
 
-                @media (max-width: $size-medium - 1) {
+		@media (max-width : $size-medium - 1) {
+		  border-top : 1px solid transparent;
+		  box-shadow : inset 0 1px 0 rgba(255, 255, 255, 0.1);
+		}
 
-                    border-top: 1px solid transparent;
-                    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+		&.collapse
+		{
 
-                }
+		  @media (max-width : $size-medium - 1) {
+			display : none !important;
+		  }
 
-                &.collapse {
+		  &.in
+		  {
 
-                    @media (max-width: $size-medium - 1) {
-                        display: none !important;
-                    }
+			@media (max-width : $size-medium - 1) {
+			  display    : block !important;
+			  position   : absolute;
+			  background : #fff;
+			  right      : 0px;
+			  z-index    : 1000;
+			}
 
-                    &.in {
+		  }
 
-                        @media (max-width: $size-medium - 1) {
-                            display:block !important;
-                            position: absolute;
-                            background: #ffffff;
-                            right: 0px;
-                            z-index: 1000;
-                        }
+		}
 
-                    }
+	  }
 
-                }
+	  .navbar-nav
+	  {
 
-            }
+		@media (max-width : $size-medium - 1) {
+		  margin-top : 0px;
+		  float      : none !important;
+		  margin-top : 7.5px;
 
-            .navbar-nav {
+		  .navbar-left, .navbar-right
+		  {
+			float : none !important;
+		  }
 
-                @media (max-width: $size-medium - 1) {
-                    margin-top: 0px;
-                    float: none !important;
-                    margin-top: 7.5px;
+		  .navbar-fixed-top
+		  {
+			top          : 0;
+			border-width : 0 0 1px;
+		  }
 
-                    .navbar-left, .navbar-right {
-                        float: none !important;
-                    }
+		}
 
-                    .navbar-fixed-top {
-                        top: 0;
-                        border-width: 0 0 1px;
-                    }
+		& > li
+		{
 
-                }
+		  @media (max-width : $size-medium - 1) {
+			float : none;
+		  }
 
-                & > li {
+		  &.active
+		  {
 
-                    @media (max-width: $size-medium - 1) {
-                        float: none;
-                    }
+			& > a
+			{
+			  background-image : none;
+			  background       : transparent;
+			  box-shadow       : none;
+			  font-weight      : bold;
+			  border-bottom    : 3px solid $color-primary-1;
+			  color            : $color-primary-1;
+			}
 
-                    &.active {
+		  }
 
-                        & > a {
-                            background-image: none;
-                            background: transparent;
-                            box-shadow: none;
-                            font-weight: bold;
-                            border-bottom: 3px solid $color-primary-1;
-                            color:  $color-primary-1;
-                        }
+		  & > a
+		  {
+			font-size    : 1.5rem;
+			color        : #fff;
+			padding      : 20px 0px 17px 0px;
+			margin-left  : 20px;
+			margin-right : 20px;
+			@include font-La-bd;
 
-                    }
+			&:hover, &.hover
+			{
+			  background-image : none;
+			  background       : transparent;
+			  box-shadow       : none;
+			  color            : $color-primary-1;
 
-                    & > a {
-                        font-size: 1.5rem;
-                        color: #ffffff;
-                        padding: 20px 0px 17px 0px;
-                        margin-left: 20px;
-                        margin-right: 20px;
+			  @media (max-width : $size-medium - 1) {
+				border-bottom : 0px;
+			  }
+			}
 
-                        @include font-La-bd;
+			@media (max-width : $size-medium - 1) {
+			  padding-top    : 10px;
+			  padding-bottom : 10px;
+			}
+		  }
 
-                        &:hover, &.hover {
-                            background-image: none;
-                            background: transparent;
-                            box-shadow: none;
-                            color:  $color-primary-1;
+		}
 
-                            @media (max-width: $size-medium - 1) {
-                                border-bottom: 0px;
-                            }
-                        }
+	  }
 
-                        @media (max-width: $size-medium - 1) {
-                            padding-top: 10px;
-                            padding-bottom: 10px;
-                        }
-                    }
+	  .navbar-nav.navbar-right
+	  {
 
-                }
+		& > li
+		{
 
-            }
+		  & > a
+		  {
+			font-size    : 1.5rem;
+			color        : #fff;
+			padding      : 20px 0px 17px 0px;
+			margin-left  : 20px;
+			margin-right : 20px;
+			color        : #b7c4d4;
 
-            .navbar-nav.navbar-right {
+			&.logout
+			{
 
-                & > li {
+			  i
+			  {
+				margin-right : 8px;
+			  }
 
-                    & > a {
-                        font-size: 1.5rem;
-                        color: #ffffff;
-                        padding: 20px 0px 17px 0px;
-                        margin-left: 20px;
-                        margin-right: 20px;
+			}
 
-                        color: #b7c4d4;
+		  }
 
-                        &.logout {
+		}
 
-                            i {
-                                margin-right: 8px;
-                            }
+	  }
 
-                        }
+	}
 
-                    }
-
-                }
-
-            }
-
-        }
-
-    }
+  }
 
 }
+
 #typography
 {
   background : #f7f5f3;
@@ -365,73 +401,87 @@ nav {
 
   }
 
-  p {
+  p
+  {
 
-        &.color-show {
-            padding-left: 60px;
-            padding-top: 10px;
-        }
+	&.color-show
+	{
+	  padding-left : 60px;
+	  padding-top  : 10px;
+	}
 
-    }
+  }
 
 }
 
-.color-circle {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    border: 1px solid transparent;
-    float: left;
+.color-circle
+{
+  display : inline-block;
+  width   : 45px;
+  height  : 45px;
+  border  : 1px solid transparent;
+  float   : left;
+  @include border-radius(50%);
 
-    @include border-radius(50%);
-
-    &.secondary-6, &.secondary-7 {
-        border: 1px solid #c5c5c5;
-    }
+  &.secondary-6, &.secondary-7
+  {
+	border : 1px solid #c5c5c5;
+  }
 }
 
-.primary-1 {
-    background: $color-primary-1;
+.primary-1
+{
+  background : $color-primary-1;
 }
 
-.primary-2 {
-    background: $color-primary-2;
+.primary-2
+{
+  background : $color-primary-2;
 }
 
-.primary-3 {
-    background: $color-primary-3;
+.primary-3
+{
+  background : $color-primary-3;
 }
 
-.primary-4 {
-    background: $color-primary-4;
+.primary-4
+{
+  background : $color-primary-4;
 }
 
-.secondary-1 {
-    background: $color-secondary-1;
+.secondary-1
+{
+  background : $color-secondary-1;
 }
 
-.secondary-2 {
-    background: $color-secondary-2;
+.secondary-2
+{
+  background : $color-secondary-2;
 }
 
-.secondary-3 {
-    background: $color-secondary-3;
+.secondary-3
+{
+  background : $color-secondary-3;
 }
 
-.secondary-4 {
-    background: $color-secondary-4;
+.secondary-4
+{
+  background : $color-secondary-4;
 }
 
-.secondary-5 {
-    background: $color-secondary-5;
+.secondary-5
+{
+  background : $color-secondary-5;
 }
 
-.secondary-6 {
-    background: $color-secondary-6;
+.secondary-6
+{
+  background : $color-secondary-6;
 }
 
-.secondary-7 {
-    background: $color-secondary-7;
+.secondary-7
+{
+  background : $color-secondary-7;
 }
 
 .row
@@ -456,7 +506,8 @@ table
 {
   &.data-table
   {
-	width : 100%;
+	width     : 100%;
+	font-size : $base-size;
 	thead
 	{
 	  th
@@ -536,15 +587,20 @@ nav
   {
 	.pagination
 	{
-	  padding      : 0;
-	  margin       : 0;
-	  margin-left  : auto;
-	  margin-right : auto;
+	  padding       : 0;
+	  margin        : 0;
+	  margin-left   : auto;
+	  margin-right  : auto;
+	  border-radius : inherit;
+	  font-weight   : bold;
 	  & > li
 	  {
 		& > a
 		{
-		  border : none;
+		  color         : $color-primary-4;
+		  border        : none;
+		  border-radius : inherit;
+		  font-size     : $base-size;
 		}
 	  }
 	}

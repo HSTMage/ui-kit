@@ -388,10 +388,101 @@ nav {
     }
 
 }
+
+.btn {
+
+    &.btn-type-1 {
+        color: $white;
+        background-color: $color-primary-1;
+        background-image: none;
+        border-radius: 4px;
+        border: 2px solid $color-primary-1;
+        padding: 10px 23px;
+        font-size: 1.6rem;
+        box-shadow: none;
+
+        @include font-La-bd;
+
+        &:hover, &.hover {
+            background-color: $color-primary-2;
+            background-image: none;
+            border-radius: 4px;
+            border: 2px solid $color-primary-2;
+        }
+
+        &:focus, &.clicked {
+            outline: none;
+            background-color: $color-primary-3;
+            background-image: none;
+            border-radius: 4px;
+            border: 2px solid $color-primary-3;
+        }
+
+        span {
+            margin-left: 8px;
+        }
+
+    }
+
+    &.btn-type-1-o {
+        color: $color-primary-1;
+        background-color: $white;
+        background-image: none;
+        border-radius: 4px;
+        border: 2px solid $color-primary-1;
+        padding: 10px 23px;
+        font-size: 1.6rem;
+        box-shadow: none;
+
+        @include font-La-bd;
+
+        &:hover, &.hover {
+            background-color: $white;
+            background-image: none;
+            color: $color-primary-2;
+            border-radius: 4px;
+            border: 2px solid $color-primary-2;
+        }
+
+        &:focus, &.clicked {
+            outline: none;
+            background-color: $white;
+            background-image: none;
+            border-radius: 4px;
+            color: $color-primary-3;
+            border: 2px solid $color-primary-3;
+        }
+
+        span {
+            margin-left: 8px;
+        }
+
+    }
+
+}
+
 #typography
 {
   background : #f7f5f3;
   padding    : 50px 30px;
+}
+
+.whiteBg {
+    background: $white;
+    margin-bottom: 40px;
+
+    & > div {
+        padding: 40px;
+    }
+}
+.bordered {
+    border: 1px solid #e0e0e0;
+}
+.border-left-no {
+    border-left: 0px !important;
+}
+.centered {
+    text-align: center;
 }
 
 .for-showcase-only

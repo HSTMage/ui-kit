@@ -617,7 +617,7 @@ nav
 	$col : $color-secondary-4;
 	background-image : none;
 	color            : $col;
-	border           : 1px solid lighten($col,20);
+	border           : 1px solid lighten($col, 20);
 	background-color : lighten($col, 50);
   }
   &.alert-info
@@ -625,7 +625,7 @@ nav
 	$col : $color-secondary-2;
 	background-image : none;
 	color            : $col;
-	border           : 1px solid lighten($col,20);
+	border           : 1px solid lighten($col, 20);
 	background-color : lighten($col, 38);
   }
   &.alert-warning
@@ -633,7 +633,7 @@ nav
 	$col : $color-primary-1;
 	background-image : none;
 	color            : $col;
-	border           : 1px solid lighten($col,20);
+	border           : 1px solid lighten($col, 20);
 	background-color : lighten($col, 50);
   }
   &.alert-danger
@@ -641,7 +641,7 @@ nav
 	$col : $color-secondary-1;
 	background-image : none;
 	color            : $col;
-	border           : 1px solid lighten($col,20);
+	border           : 1px solid lighten($col, 20);
 	background-color : lighten($col, 38);
   }
   i
@@ -650,5 +650,12 @@ nav
 	{
 	  margin-right : $small-padding;
 	}
+  }
+}
+
+.accordion
+{
+  .panel-heading
+  {
   }
 }

@@ -1475,6 +1475,11 @@ ol
   }
 }
 
+.tooltips
+{
+  padding-top : $big-padding;
+}
+
 .tiplink
 {
   font-weight     : bold;
@@ -1491,4 +1496,49 @@ ol
   -webkit-box-shadow : none;
   box-shadow         : none;
   border             : 1px solid $color-secondary-7;
+}
+
+.login
+{
+  text-align  : center;
+  padding-top : 80px;
+  .logininner
+  {
+	float        : none;
+	margin-left  : auto;
+	margin-right : auto;
+	text-align   : left;
+  }
+  .whiteBg > div
+  {
+	padding : 0px;
+  }
+  form
+  {
+	padding-top    : 60px;
+	padding-bottom : 40px;
+
+	.forgot-pass
+	{
+	  font-weight     : bold;
+	  color           : $color-primary-1;
+	  text-decoration : underline;
+	  display         : block;
+	  padding-top     : 5px;
+	}
+	button
+	{
+	  width : 100%;
+	}
+  }
+  .loginw
+  {
+	position : relative;
+	.imgw
+	{
+	  position : absolute;
+	  left     : 80px;
+	  bottom   : 0px;
+	}
+  }
 }

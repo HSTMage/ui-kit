@@ -824,6 +824,9 @@ ol.breadcrumb {
       border: 1rem solid #fff;
       box-shadow: 1px 1px 1px 0px rgba(34, 34, 34, 0.35), 1px -1px 1px 0px rgba(34, 34, 34, 0.35), -1px 1px 1px 0px rgba(34, 34, 34, 0.35), -1px -1px 1px 0px rgba(34, 34, 34, 0.35), 0px 5px 5px 0px rgba(34, 34, 34, 0.35); }
 
+.tooltips {
+  padding-top: 40px; }
+
 .tiplink {
   font-weight: bold;
   text-decoration: underline;
@@ -835,5 +838,33 @@ ol.breadcrumb {
   -webkit-box-shadow: none;
   box-shadow: none;
   border: 1px solid #e0e0e0; }
+
+.login {
+  text-align: center;
+  padding-top: 80px; }
+  .login .logininner {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; }
+  .login .whiteBg > div {
+    padding: 0px; }
+  .login form {
+    padding-top: 60px;
+    padding-bottom: 40px; }
+    .login form .forgot-pass {
+      font-weight: bold;
+      color: #f59100;
+      text-decoration: underline;
+      display: block;
+      padding-top: 5px; }
+    .login form button {
+      width: 100%; }
+  .login .loginw {
+    position: relative; }
+    .login .loginw .imgw {
+      position: absolute;
+      left: 80px;
+      bottom: 0px; }
 
 /*# sourceMappingURL=style.css.map */

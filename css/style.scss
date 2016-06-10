@@ -12,6 +12,7 @@ html
 body
 {
   background-color : $main-bg;
+  @include font-La();
 }
 
 h1
@@ -1115,6 +1116,127 @@ nav
   }
 }
 
+.graphs
+{
+  .ct-series-a .ct-area, .ct-series-a .ct-slice-pie, .ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut
+  {
+	fill   : $color-primary-1;
+	stroke : $color-primary-1
+  }
+  .val-a
+  {
+	color : $color-primary-1
+  }
+  .ct-series-b .ct-area, .ct-series-b .ct-slice-pie, .ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut
+  {
+	fill   : $color-primary-2;
+	stroke : $color-primary-2;
+  }
+  .val-b
+  {
+	color : $color-primary-2;
+  }
+  .ct-series-c .ct-area, .ct-series-c .ct-slice-pie, .ct-series-c .ct-bar, .ct-series-c .ct-line, .ct-series-c .ct-point, .ct-series-c .ct-slice-donut
+  {
+	fill   : $color-secondary-5;
+	stroke : $color-secondary-5;
+  }
+  .val-c
+  {
+	color : $color-secondary-5;
+  }
+  .ct-series-d .ct-area, .ct-series-d .ct-slice-pie, .ct-series-d .ct-bar, .ct-series-d .ct-line, .ct-series-d .ct-point, .ct-series-d .ct-slice-donut
+  {
+	fill   : $color-secondary-7;
+	stroke : $color-secondary-7;
+  }
+  .val-d
+  {
+	color : $color-secondary-7;
+  }
+  .ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut,
+  .ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut,
+  .ct-series-c .ct-bar, .ct-series-c .ct-line, .ct-series-c .ct-point, .ct-series-c .ct-slice-donut,
+  .ct-series-d .ct-bar, .ct-series-d .ct-line, .ct-series-d .ct-point, .ct-series-d .ct-slice-donut
+  {
+	stroke-width : 50px;
+  }
+  .ct-grid
+  {
+	stroke           : $color-secondary-7;
+	stroke-dasharray : none;
+  }
+  ul
+  {
+	list-style : none;
+	padding    : 0px;
+	margin     : 0px;
+	li
+	{
+	  font-size   : $base-size;
+	  line-height : $base-size*2;
+	  font-weight : bold;
+	  span
+	  {
+		font-size : $base-size*1.5;
+	  }
+	}
+  }
+  .pie, .bar
+  {
+	.graph
+	{
+	  height         : 300px;
+	  padding-bottom : $small-padding;
+	}
+
+  }
+  .pie
+  {
+	.graph
+	{
+	  border-bottom : 1px solid $color-secondary-7;
+	}
+	ul
+	{
+	  li
+	  {
+		padding-top : $small-padding;
+		span
+		{
+		  float : right;
+		}
+	  }
+	}
+  }
+  .bar
+  {
+	ul
+	{
+	  li
+	  {
+		span
+		{
+		  display : block;
+		}
+	  }
+	}
+	&.vertical
+	{
+	  text-align : center;
+	  .labels
+	  {
+		width       : 86%;
+		margin-left : auto;
+		li
+		{
+		  text-align : left	;
+		}
+	  }
+	}
+  }
+}
+
 .checkbox, .radio
 {
   label
@@ -1186,6 +1308,43 @@ nav
 	&:checked + label i:before
 	{
 	  content : "\f111";
+	}
+  }
+}
+
+.spinner
+{
+  .input-group
+  {
+	width : 100%;
+	.ui-spinner
+	{
+	  width : 100%;
+	  input
+	  {
+		&.ui-spinner-input
+		{
+		  font-family : 'Lato', sans-serif;
+		  font-weight : 400;
+		  font-size   : 1.6rem;
+		  margin      : 0px 0px;
+		  padding     : 12px 18px 13px;
+		}
+	  }
+	  .ui-spinner-button
+	  {
+		width            : 42px;
+		background-color : $color-additional-2;
+		text-align       : center;
+		border-left      : 1px solid $color-secondary-7;
+	  }
+	  .ui-button-text-only
+	  {
+		.ui-button-text
+		{
+		  display : none;
+		}
+	  }
 	}
   }
 }

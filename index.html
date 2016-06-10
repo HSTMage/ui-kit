@@ -22,6 +22,49 @@
 <body>
 <div class="row padded">
     <div class="inner padded graphs">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="pie">
+                    <div id="pie" class="graph"></div>
+                    <div class="labels">
+                        <ul>
+                            <li>Graph option 1 <span class="val-a">40%</span></li>
+                            <li>Graph option 3 <span class="val-b">10%</span></li>
+                            <li>Graph option 3 <span class="val-c">20%</span></li>
+                            <li>Graph option 4 <span class="val-d">30%</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bar vertical">
+                    <div id="bar" class="graph"></div>
+                    <div class="labels">
+                        <ul class="row">
+                            <li class="col-md-3"><span class="val-a">40%</span>option 1</li>
+                            <li class="col-md-3"><span class="val-b">10%</span>option 3</li>
+                            <li class="col-md-3"><span class="val-c">20%</span>option 3</li>
+                            <li class="col-md-3"><span class="val-d">30%</span>option 4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="bar horizontal">
+                    <div class="row">
+                        <div class="col-md-2 labels">
+                            <ul>
+                                <li><span class="val-d">30%</span>option 1</li>
+                                <li><span class="val-c">20%</span>option 2</li>
+                                <li><span class="val-b">10%</span>option 3</li>
+                                <li><span class="val-a">40%</span>option 4</li>
+                            </ul>
+                        </div>
+                        <div id="bar2" class="graph col-md-10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div class="row padded">
@@ -809,7 +852,16 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div class="row">
+                            <div class="form-group spinner">
+                                <label class="col-md-4 control-label" for="spinner">Spinner</label>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <input id="spinner" name="value">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </form>
                 </div>
 

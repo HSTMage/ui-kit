@@ -1030,6 +1030,69 @@ nav
   }
 }
 
+ul
+{
+  &.tabs
+  {
+	font-size     : 1.6rem;
+	font-weight   : 700;
+	margin-bottom : 1rem;
+	li
+	{
+	  display       : block;
+	  float         : left;
+	  border-bottom : 1px solid $color-secondary-7;
+	  &.active
+	  {
+		border                  : 1px solid $color-secondary-7;
+		border-bottom           : none;
+		border-top-left-radius  : $radius;
+		border-top-right-radius : $radius;
+		a
+		{
+		  color : $color-primary-1;
+		}
+	  }
+	}
+	a
+	{
+	  color : $color-primary-2;
+	  &:hover
+	  {
+		background-color : transparent;
+		color            : $color-primary-1;
+	  }
+	}
+  }
+}
+
+ol
+{
+
+  &.breadcrumb
+  {
+	padding          : $small-padding $main-padding;
+	background-color : $color-additional-3;
+	border-radius    : $radius;
+	font-size        : $base-size;
+	& > li + li:before
+	{
+	  display                : inline-block;
+	  font                   : normal normal normal 14px/1 FontAwesome;
+	  font-size              : 0.8em;
+	  text-rendering         : auto;
+	  -webkit-font-smoothing : antialiased;
+	  content                : "\f054";
+	  color                  : $color-additional-4;
+	  padding                : 0 $small-padding;
+	}
+	a
+	{
+	  color : $color-primary-1;
+	}
+  }
+}
+
 .alert
 {
   font-size     : $base-size;
@@ -1230,7 +1293,7 @@ nav
 		margin-left : auto;
 		li
 		{
-		  text-align : left	;
+		  text-align : left;
 		}
 	  }
 	}

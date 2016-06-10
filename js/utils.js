@@ -1,23 +1,27 @@
-$(function() {
+function init_graphs()
+{
 
-    if ($('.calendar-input').length) {
+}
+$(function ()
+  {
 
-        $('.calendar-input input').datepicker({
-            autoSize: true
-        });
+	  if ($('.calendar-input').length)
+	  {
 
-        $('.calendar-input button')
-            .on('click', function(){
+		  $('.calendar-input input').datepicker({
+			                                        autoSize: true
+		                                        });
 
-                el = $(this);
-                _i = el.parents('.calendar-input').find('input');
+		  $('.calendar-input button').on('click', function ()
+		  {
 
-                _i.datepicker("show");
+			  el = $(this);
+			  _i = el.parents('.calendar-input').find('input');
 
-            });
+			  _i.datepicker("show");
 
-        $('.open-calendar input').datepicker("show");
+		  });
+	  }
+	  init_graphs();
 
-    }
-
-});
+  });

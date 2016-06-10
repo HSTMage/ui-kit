@@ -1114,3 +1114,78 @@ nav
 	}
   }
 }
+
+.checkbox, .radio
+{
+  label
+  {
+	padding      : 0px;
+	padding-left : $secondary-padding;
+	position     : relative;
+  }
+  label
+  {
+	i
+	{
+	  display                : inline-block;
+	  font                   : normal normal normal 14px/1 FontAwesome;
+	  font-size              : inherit;
+	  text-rendering         : auto;
+	  -webkit-font-smoothing : antialiased;
+	  border                 : 1px solid $color-secondary-7;
+	  color                  : $color-primary-4;
+	  border-radius          : 2px;
+	  width                  : 21px;
+	  height                 : 21px;
+	  text-align             : center;
+	  left                   : 0px;
+	  position               : absolute;
+	  &:before
+	  {
+		content  : "";
+		position : absolute;
+		left     : 2px;
+		top      : 1px;
+	  }
+	}
+  }
+  input
+  {
+	display : none;
+  }
+}
+
+.checkbox
+{
+  input
+  {
+	&:checked + label i:before
+	{
+	  content : "\f00c";
+	}
+  }
+}
+
+.radio
+{
+  label
+  {
+	i
+	{
+	  border-radius : 50%;
+	  &:before
+	  {
+		left : 3px;
+		top  : 1px;
+	  }
+	}
+
+  }
+  input
+  {
+	&:checked + label i:before
+	{
+	  content : "\f111";
+	}
+  }
+}

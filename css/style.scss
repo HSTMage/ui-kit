@@ -1430,3 +1430,16 @@ ol
 	}
   }
 }
+
+.progress
+{
+  background-color : $color-secondary-6;
+  background-image : none;
+  border-radius    : 10px;
+  box-shadow       : none;
+  .progress-bar
+  {
+	background-color : $color-primary-1;
+	background-image : none;
+  }
+}

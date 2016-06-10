@@ -1443,3 +1443,34 @@ ol
 	background-image : none;
   }
 }
+
+.range-slider
+{
+  background-color : $color-secondary-6;
+  &.ui-slider
+  {
+	height        : 1.2rem;
+	border-radius : 0.6rem;
+	border        : none;
+	.ui-slider-range
+	{
+	  background-color : $color-primary-1;
+	  cursor           : pointer;
+	}
+	.ui-slider-handle
+	{
+	  background-color : $color-primary-1;
+	  height           : 3rem;
+	  width            : 3rem;
+	  border-radius    : 1.5rem;
+	  top              : -1rem;
+	  cursor           : pointer;
+	  border           : 1rem solid $white;
+	  box-shadow       : 1px 1px 1px 0px rgba($color-primary-4, 0.35),
+	  1px -1px 1px 0px rgba($color-primary-4, 0.35),
+	  -1px 1px 1px 0px rgba($color-primary-4, 0.35),
+	  -1px -1px 1px 0px rgba($color-primary-4, 0.35),
+	  0px 5px 5px 0px rgba($color-primary-4, 0.35);
+	}
+  }
+}

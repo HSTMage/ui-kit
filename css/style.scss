@@ -1009,21 +1009,40 @@ nav
   {
 	display : block;
 	border  : 1px solid $color-secondary-7;
-	padding : $small-padding;
   }
   &.pager
   {
 	.pagination
 	{
 	  padding      : 0;
+	  padding-top  : 7px;
 	  margin       : 0;
 	  margin-left  : auto;
 	  margin-right : auto;
+	  font-weight  : bold;
 	  & > li
 	  {
+		&.active > a
+		{
+		  border-radius    : 0;
+		  background-color : transparent;
+		  color            : $color-primary-1;
+		  border-bottom    : 3px solid $color-primary-1;
+		}
 		& > a
 		{
-		  border : none;
+		  padding       : 10px 5px;
+		  margin-left   : 10px;
+		  margin-right  : 10px;
+		  border-radius : 0;
+		  border        : none;
+		  color         : $color-primary-4;
+		  &:hover
+		  {
+			border-radius    : 0;
+			color            : $color-primary-1;
+			background-color : transparent;
+		  }
 		}
 	  }
 	}

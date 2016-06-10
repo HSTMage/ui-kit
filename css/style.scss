@@ -1474,3 +1474,21 @@ ol
 	}
   }
 }
+
+.tiplink
+{
+  font-weight     : bold;
+  text-decoration : underline;
+  color           : $color-primary-1;
+  &:hover
+  {
+	color : $color-primary-1;
+  }
+}
+
+.ui-tooltip
+{
+  -webkit-box-shadow : none;
+  box-shadow         : none;
+  border             : 1px solid $color-secondary-7;
+}

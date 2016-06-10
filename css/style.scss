@@ -1,6 +1,7 @@
 @import "normalize.css";
 @import "_variables";
 @import "_functions";
+@import "jquery-ui.css";
 
 html
 {
@@ -93,6 +94,277 @@ p
 
 }
 
+form
+{
+
+  input
+  {
+
+	&.form-control
+	{
+	  font-size : 1.6rem;
+	  color     : $color-primary-3;
+	  border    : 1px solid #e0e0e0;
+	  padding   : 12px 18px 13px;
+	  height    : inherit;
+	  @include font-La;
+
+	  &:focus
+	  {
+		outline    : none;
+		border     : 1px solid $color-primary-1;
+		box-shadow : none;
+	  }
+
+	  &:hover, &.hover
+	  {
+		border : 1px solid $color-primary-1;
+	  }
+
+	}
+
+	&.error
+	{
+	  border : 1px solid $color-secondary-1;
+	}
+
+	&[disabled="disabled"]
+	{
+	  background : #f5f5f5;
+	  border     : 1px solid #f5f5f5;
+	}
+
+  }
+
+  textarea
+  {
+
+	&.form-control
+	{
+	  font-size  : 1.6rem;
+	  color      : $color-primary-3;
+	  border     : 1px solid #e0e0e0;
+	  min-height : 115px;
+
+	  &:hover, &.hover
+	  {
+		border : 1px solid $color-primary-1;
+	  }
+
+	  &:focus
+	  {
+		outline    : none;
+		border     : 1px solid #e0e0e0;
+		box-shadow : none;
+	  }
+
+	}
+
+  }
+
+  .dropdown-input
+  {
+
+	.open
+	{
+	  position : static;
+
+	  ul
+	  {
+		display    : table;
+		width      : 100%;
+		left       : 0;
+		right      : 0;
+		padding    : 0px;
+		margin-top : 0px;
+		box-shadow : none;
+
+		li
+		{
+
+		  a
+		  {
+			font-size : 1.6rem;
+			color     : $color-primary-4;
+			padding   : 12px 18px 13px;
+			@include font-La;
+
+			&:hover
+			{
+			  background       : $color-primary-1;
+			  background-image : none;
+			}
+
+		  }
+
+		}
+
+	  }
+
+	}
+
+  }
+
+  .help-block
+  {
+	font-size : 1.3rem;
+	@include font-La;
+
+	&.error
+	{
+	  color : $color-secondary-1;
+	}
+
+  }
+
+  .input-group
+  {
+
+	&:hover
+	{
+
+	  input
+	  {
+
+		&.form-control
+		{
+		  border : 1px solid $color-primary-1;
+		}
+
+	  }
+
+	  .btn
+	  {
+		border     : 1px solid $color-primary-1;
+		color      : $color-primary-1;
+		background : $white;
+	  }
+	}
+
+	.btn
+	{
+	  min-width : 42px;
+
+	  &.btn-calendar
+	  {
+		padding   : 14px 12px 15px;
+		font-size : 1.8rem;
+
+		&:hover, &.hover
+		{
+		  border     : 1px solid $color-primary-1;
+		  color      : $color-primary-1;
+		  background : $white;
+		}
+
+	  }
+
+	  &.dropdown-toggle
+	  {
+		padding : 19px 12px 20px;
+
+		&:hover, &.hover
+		{
+		  color      : $color-primary-1;
+		  background : $white;
+		  border     : 1px solid $color-primary-1;
+		}
+
+		.caret
+		{
+		  border-top   : 8px dashed;
+		  border-right : 7px solid transparent;
+		  border-left  : 7px solid transparent;
+
+		  &:hover, &.hover
+		  {
+			color : $color-primary-1;
+		  }
+		}
+
+	  }
+
+	  &:focus
+	  {
+		outline    : none;
+		box-shadow : none;
+	  }
+
+	}
+
+  }
+
+  label
+  {
+	font-size : 1.6rem;
+	color     : $color-primary-3;
+	@include font-La;
+  }
+
+}
+
+form input.form-control::-webkit-input-placeholder, form textarea.form-control::-webkit-input-placeholder
+{
+  color : $color-primary-4;
+  @include font-La;
+}
+
+form input.form-control:-moz-placeholder, form textarea.form-control:-moz-placeholder
+{ /* Firefox 18- */
+  color : $color-primary-4;
+  @include font-La;
+}
+
+form input.form-control::-moz-placeholder, form textarea.form-control::-moz-placeholder
+{ /* Firefox 19+ */
+  color : $color-primary-4;
+  @include font-La;
+}
+
+form input.form-control:-ms-input-placeholder, form textarea.form-control:-ms-input-placeholder
+{
+  color : $color-primary-4;
+  @include font-La;
+}
+
+.ui-widget-content
+{
+
+  .ui-state-default
+  {
+	text-align : center;
+  }
+
+  .ui-datepicker-next, .ui-datepicker-prev
+  {
+
+	&.ui-state-hover
+	{
+	  background : $white;
+	  border     : 0px;
+	  top        : 2px;
+	  cursor     : pointer;
+	}
+
+	&.ui-datepicker-next-hover
+	{
+	  right : 2px;
+	}
+
+	&.ui-datepicker-prev-hover
+	{
+	  left : 2px;
+	}
+
+  }
+
+  .ui-icon, .ui-widget-content .ui-icon
+  {
+	background-image : url("images/ui-icons_f59100_256x240.png");
+  }
+
+}
+
 .orange
 {
   color : $color-primary-1;
@@ -181,8 +453,9 @@ nav
 	background    : #47586d;
 	border        : 0px;
 	box-shadow    : none;
-	margin-bottom : 0px;
+	margin-bottom : 30px;
 	border-radius : 0px;
+	text-shadow   : none;
 
 	& > .container-fluid
 	{
@@ -201,6 +474,7 @@ nav
 		  padding      : 0px;
 		  padding-top  : 22px;
 		  font-size    : 1.9rem;
+		  text-shadow  : none;
 		}
 
 		.navbar-toggle
@@ -319,6 +593,7 @@ nav
 			padding      : 20px 0px 17px 0px;
 			margin-left  : 20px;
 			margin-right : 20px;
+			text-shadow  : none;
 			@include font-La-bd;
 
 			&:hover, &.hover
@@ -351,12 +626,54 @@ nav
 
 		  & > a
 		  {
-			font-size    : 1.5rem;
-			color        : #fff;
-			padding      : 20px 0px 17px 0px;
-			margin-left  : 20px;
-			margin-right : 20px;
-			color        : #b7c4d4;
+			font-size     : 1.5rem;
+			color         : #fff;
+			padding       : 20px 0px 17px 0px;
+			margin-left   : 20px;
+			margin-right  : 20px;
+			padding-right : 20px;
+			color         : #b7c4d4;
+
+			&.search
+			{
+			  position : relative;
+
+			  i
+			  {
+				margin-right : 8px;
+				font-size    : 1.7rem;
+			  }
+
+			  &:after
+			  {
+				display    : block;
+				content    : '';
+				position   : absolute;
+				height     : 34px;
+				top        : 13px;
+				right      : 0px;
+				width      : 1px;
+				background : #727f8f;
+			  }
+
+			}
+
+			&.user-profile
+			{
+			  padding : 8px 0px 8px 0px;
+
+			  span
+			  {
+				display      : inline-block;
+				margin-right : 8px;
+			  }
+
+			  &:hover, &.hover
+			  {
+				color : $white;
+			  }
+
+			}
 
 			&.logout
 			{
@@ -364,6 +681,12 @@ nav
 			  i
 			  {
 				margin-right : 8px;
+				font-size    : 1.7rem;
+			  }
+
+			  &:hover, &.hover
+			  {
+				color : $color-secondary-1;
 			  }
 
 			}
@@ -380,10 +703,115 @@ nav
 
 }
 
+.btn
+{
+
+  &.btn-type-1
+  {
+	color            : $white;
+	background-color : $color-primary-1;
+	background-image : none;
+	border-radius    : 4px;
+	border           : 2px solid $color-primary-1;
+	padding          : 10px 23px;
+	font-size        : 1.6rem;
+	box-shadow       : none;
+	@include font-La-bd;
+
+	&:hover, &.hover
+	{
+	  background-color : $color-primary-2;
+	  background-image : none;
+	  border-radius    : 4px;
+	  border           : 2px solid $color-primary-2;
+	}
+
+	&:focus, &.clicked
+	{
+	  outline          : none;
+	  background-color : $color-primary-3;
+	  background-image : none;
+	  border-radius    : 4px;
+	  border           : 2px solid $color-primary-3;
+	}
+
+	span
+	{
+	  margin-left : 8px;
+	}
+
+  }
+
+  &.btn-type-1-o
+  {
+	color            : $color-primary-1;
+	background-color : $white;
+	background-image : none;
+	border-radius    : 4px;
+	border           : 2px solid $color-primary-1;
+	padding          : 10px 23px;
+	font-size        : 1.6rem;
+	box-shadow       : none;
+	@include font-La-bd;
+
+	&:hover, &.hover
+	{
+	  background-color : $white;
+	  background-image : none;
+	  color            : $color-primary-2;
+	  border-radius    : 4px;
+	  border           : 2px solid $color-primary-2;
+	}
+
+	&:focus, &.clicked
+	{
+	  outline          : none;
+	  background-color : $white;
+	  background-image : none;
+	  border-radius    : 4px;
+	  color            : $color-primary-3;
+	  border           : 2px solid $color-primary-3;
+	}
+
+	span
+	{
+	  margin-left : 8px;
+	}
+
+  }
+
+}
+
 #typography
 {
   background : #f7f5f3;
   padding    : 50px 30px;
+}
+
+.whiteBg
+{
+  background    : $white;
+  margin-bottom : 40px;
+
+  & > div
+  {
+	padding : 40px;
+  }
+}
+
+.bordered
+{
+  border : 1px solid #e0e0e0;
+}
+
+.border-left-no
+{
+  border-left : 0px !important;
+}
+
+.centered
+{
+  text-align : center;
 }
 
 .for-showcase-only
@@ -506,8 +934,7 @@ table
 {
   &.data-table
   {
-	width     : 100%;
-	font-size : $base-size;
+	width : 100%;
 	thead
 	{
 	  th
@@ -587,20 +1014,15 @@ nav
   {
 	.pagination
 	{
-	  padding       : 0;
-	  margin        : 0;
-	  margin-left   : auto;
-	  margin-right  : auto;
-	  border-radius : inherit;
-	  font-weight   : bold;
+	  padding      : 0;
+	  margin       : 0;
+	  margin-left  : auto;
+	  margin-right : auto;
 	  & > li
 	  {
 		& > a
 		{
-		  color         : $color-primary-4;
-		  border        : none;
-		  border-radius : inherit;
-		  font-size     : $base-size;
+		  border : none;
 		}
 	  }
 	}
@@ -611,7 +1033,7 @@ nav
 {
   font-size     : $base-size;
   font-weight   : bold;
-  border-radius : 2px;
+  border-radius : $radius;
   &.alert-success
   {
 	$col : $color-secondary-4;
@@ -653,9 +1075,42 @@ nav
   }
 }
 
-.accordion
+.panel-group
 {
-  .panel-heading
+  &.accordion
   {
+	.panel
+	{
+	  border-radius : $radius;
+	}
+	.panel-heading
+	{
+	  background-color         : $color-primary-2;
+	  color                    : $color-primary-5;
+	  background-image         : none;
+	  text-transform           : uppercase;
+	  border-top-left-radius   : $radius;
+	  border-top-righht-radius : $radius;
+	  padding                  : $main-padding $secondary-padding;
+	  a
+	  {
+		display : block;
+		i
+		{
+		  float : right;
+		}
+	  }
+	}
+	.panel-body
+	{
+	  padding : $main-padding $secondary-padding;
+	  p
+	  {
+		&:last-of-type
+		{
+		  margin-bottom : 0px;
+		}
+	  }
+	}
   }
 }
